@@ -12,8 +12,8 @@
 
 	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
-	<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css">
+
+<link href="navbar-fixed-top.css" rel="stylesheet">
 	<!-- 最新的 Bootstrap 核心 Jquery 文件 -->
 <script src="https://cdn.bootcss.com/jquery/3.4.1/core.js"></script>
 <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
@@ -30,14 +30,55 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-
   <body>
+   <!-- Fixed navbar -->
+   <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">guocq</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">education</a></li>
+              <li><a href="#">research</a></li>
+              <li><a href="#">project experience</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="dropdown-header">certificate/skill</li>
+              <li><a href="#">*</a></li>
+              <!-- <li><a href="#">One more separated link</a></li> -->
+            </ul>
+          </li>
+        </ul>
+        <!-- <ul class="nav navbar-nav navbar-right">
+          <li><a href="../navbar/">Default</a></li>
+          <li><a href="../navbar-static-top/">Static top</a></li>
+          <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+        </ul> -->
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
 
-	<div class="container">
-    		<div class="well">
-      		<h1>Hello World!</h1>
-      		<p><button class="btn btn-lg btn-primary">Learn More</button></p>
-    		</div>
-  	</div>
+  <div class="container">
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <h1>guocq</h1>
+      <p>a man with full imagination!</p>
+      <p>
+        <a class="btn btn-lg btn-primary" href="#">View resume docs &raquo;</a>
+      </p>
+    </div>
+  </div> <!-- /container -->
   </body>
 </html>
