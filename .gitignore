@@ -28,9 +28,5 @@
 **.iml
 **/.idea
 
-# mysql data and config
-./mysql/data
-./mysql/etc
-
 # VS Code
 ./.vs/
