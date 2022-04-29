@@ -1,0 +1,25 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Chaoqun Guo
+tagline:          'software engineer'
+description:      'a software engineer from no one'
+url:              https://chaoqun-guo.github.io
+baseurl:          /
+
+author:
+  name:           'Chaoqun Guo'
+  url:            https://chaoqun-guo.github.io
+
+paginate:         5
+
+# Custom vars
+version:          1.0.0
+
+
